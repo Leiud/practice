@@ -9,6 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>security-quickstart80</module>
+      <module>security-customer-login80</module>
   </modules>
   <packaging>pom</packaging>
 
