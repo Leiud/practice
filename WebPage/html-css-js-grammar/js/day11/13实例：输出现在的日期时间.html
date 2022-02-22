@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="1" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：现在的日期时间信息
+var arr = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+//创建现在的日期对象
+var today = new Date();
+//取出各种日期时间信息
+var year = today.getFullYear();
+var month = today.getMonth()+1;
+var date = today.getDate();
+var hours = today.getHours();
+var minutes = today.getMinutes();
+var seconds = today.getSeconds();
+var week = today.getDay();//取值0-6
+//不够两位，前面补0
+month = month<10 ? "0"+month : month;
+date  = date < 10 ? "0"+date : date;
+hours = hours<10 ? "0"+hours : hours;
+minutes = minutes<10 ? "0"+minutes : minutes;
+seconds = seconds<10 ? "0"+seconds : seconds;
+//构建要输出的结果
+var str = year+"年"+month+"月"+date+"日";
+str += "<br>"+hours+":"+minutes+":"+seconds;
+str += "<br>"+arr[week];
+//输出结果
+document.write(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

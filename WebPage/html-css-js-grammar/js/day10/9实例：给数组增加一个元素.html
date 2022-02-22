@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：引用传址的使用
+/*
+	在函数外定义一个数组，通过传参的方式，传给函数。
+	在函数内部给该数组的末尾增加一个元素
+*/
+var arr = ["张三","男",24];
+function addElement(arr2)
+{
+	//给当前数组末尾添加一个“北京科技大学”的元素
+	arr2[arr2.length] = "北京科技大学";
+	/*
+		arr2[3] = "北京科技大学"
+	*/
+}
+//调用函数：将数组的地址“拷贝”一份，传给函数参数
+addElement(arr);
+//输出数组变量arr的值，会发现变量4个元素
+document.write(arr);
+</script>
+</head>
+
+<body>
+</body>
+</html>

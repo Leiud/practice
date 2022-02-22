@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：根据用户输入的分数，判断其评语
+/*
+	根据一个学生的分数（0-100之间），给其下相应的评语：大于90为优秀，大于等于80为良好，
+	大于等于70为中等，大于等于60为及格，小于60为不及格。
+*/
+//（1）获取用户输入的分数
+var score = window.prompt("请输入0-100之间的分数");
+//（2）根据不同分类，给其下不同的评语
+var str;
+if(score>=90)
+{
+	str = "优秀";
+}else if(score>=80)
+{
+	str = "良好";
+}else if(score>=70)
+{
+	str = "中等";
+}else if(score>=60)
+{
+	str = "及格";
+}else
+{
+	str = "不及格";
+}
+//（3）输出结果
+document.write(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

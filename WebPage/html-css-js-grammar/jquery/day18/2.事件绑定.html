@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			//页面加载完毕，为div绑定事件
+			$(function(){
+				//1.简单绑定
+				//$('div').bind(事件类型，处理函数[有名/匿名])
+				$('div').bind('mouseover',function(){
+					$(this).css('background-color','lightblue');
+				});
+				$('div').bind('mouseout',function(){
+					$(this).css('background-color','lightgreen');
+				});
+				//2.为同一个对象的“多个不同类型事件”绑定同一个处理
+				//$('div').bind(事件类型1 类型2 类型3...，处理函数[有名/匿名])
+				//注意：多个类型事件彼此通过“一个”空格连接
+				$('div').bind('click mouseover mouseout',function(){
+					console.log(1234);
+				});
+				//3.通过一个“json”对象为节点同时绑定多个事件
+				//$('div').bind(json);
+				
+				//批量方式设置事件
+				$('div').bind({
+					click:function(){console.log('111')},
+					mouseover:function(){console.log('222')},
+					mouseout:function(){console.log('333')},
+				});
+				
+				$('div').bind('mouseover',function(){
+					$(this).css('font-size','30px');
+				});
+				$('div').bind('mouseout',function(){
+					$(this).css('font-size','5px');
+				});
+				
+				//“有名函数”事件绑定
+				$('div').bind('click',fa);
+				$('div').bind('click',fb);
+				$('div').bind('click',fc);
+			});
+			function fa(){
+				console.log('aaa');
+				}
+			function fb(){
+				console.log('bbb');
+			}
+			function fc(){
+				console.log('ccc');
+			}
+			function f()
+			{
+				//事件取消
+				$('div').unbind();//全部事件
+				$('div').unbind('click');//取消指定类型事件
+				$('div').unbind('click',fb);//取消指定类型，指定处理(有名函数)
+				
+			}
+		</script>
+		<style type="text/css">
+			div{width:300px;height:200px;background-color:lightgreen;}
+		</style>
+	</head>
+	
+	<body>
+		<h2>事件绑定</h2>
+		<div>Today is rain</div>
+		<br/>
+		<input type="button" value="取消事件" onclick="f()"/>
+	</body>
+</html>

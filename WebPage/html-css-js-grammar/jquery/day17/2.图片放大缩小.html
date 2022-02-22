@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function f()
+			{
+				//放大
+				//获得图片原、高
+				var w=$('img').width();
+				var h=$('img').height();
+				//递增操作
+				var neww=w+5;
+				var newh=neww*h/w;//等比例
+				//把新的宽高设给图片
+				$('img').width(neww);
+				$('img').hight(newh);
+			}
+			function s()
+			{
+				//缩小
+				//获得图片原、高
+				var w=$('img').width();
+				var h=$('img').height();
+				//递减操作
+				var neww=w-100;
+				var newh=neww*h/w;//等比例
+				//把新的宽高设给图片
+				$('img').width(neww);
+				$('img').hight(newh);
+			}
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	
+	<body>
+		<h2>图片放大缩小</h2>
+		<img src="10.jpg" alt="同道殊途" />
+		<br/>
+		<input type="button" value="放大" onclick="f()"/>
+		<input type="button" value="缩小" onclick="s()"/>
+	</body>
+</html>

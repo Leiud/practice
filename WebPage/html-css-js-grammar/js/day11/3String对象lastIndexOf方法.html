@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：判断以下文件名是不是图片
+var arr = ["gif","png","jpg"];
+var filename = "2015.06.22.1030.gif"; //假设是上传文件名 
+//先找到文件扩展名前的小点
+var index = filename.lastIndexOf(".");
+//取出扩展名
+var ext = filename.substr(index+1);
+//循环数组，比较扩展名是否含法
+var flag = false; //标志
+for(var i=0;i<arr.length;i++)
+{
+	if(ext == arr[i])
+	{
+		flag = true;
+		break;//退出循环
+	}
+}
+//判断flag的值
+if(flag)
+{
+	document.write("<font color=blue>合法！</font>");
+}else
+{
+	document.write("<font color=red>不合法！</font>");
+}
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

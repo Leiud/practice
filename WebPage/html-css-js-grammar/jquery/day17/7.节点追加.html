@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('div').mouseover(function(){
+					//$('div').css('background-color','lightgreen');
+					//this代表dom对象，如果有多个则依次代表
+				});
+				$('div').mouseout(function(){
+					$('div').css('background-color','lightblue');
+				});
+				//允许为同一个对象设置多个同类型事件
+				$('div').mouseover(function(){
+					$('div').css('font-size','30px');
+				});
+			})
+			//触发事件执行
+			//通过代码触发事件执行
+			//$('').mouseover();
+			//$('form').submit();对表单进行提交
+			//$('div').click(function(){事件触发过程});
+			
+		</script>
+		<style type="text/css">
+			div{width:300px;height:200px;background-color:lightblue;}
+		</style>
+	</head>
+	
+	<body>
+		<h2>简单事件操作</h2>
+		<div>Today is sunshine</div>
+	</body>
+</html>

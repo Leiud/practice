@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function f()
+			{
+				document.getElementsByTagName('h2')[0].style.backgroundColor="pink";
+				
+				//jquery对象  调用  dom对象的成员  失败
+				$('h2').style.backgroundColor="pink";
+				
+				//jquery对象变为dom对象后再  调用  dom对象的成员 
+				$('h2')[0].style.backgroundColor="lightblue";
+			}
+			function s()
+			{
+				$('div').css('color','blue');
+				
+				//dom对象  调用  jquery对象的成员  失败
+				document.getElementsByTagName('div')[0].css('color','blue');
+				
+				//dom对象变为jquery对象后再  调用  jquery对象的成员
+				var dv=document.getElementsByTagName('div')[0];
+				$(dv).css('color','blue');
+			}
+			function r()
+			{
+				//$('#apple')是对getElementsById('#apple')的封装
+				console.log('#apple');//Object[div#apple]
+			}
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	
+	<body>
+		<h2>jquery&dom</h2>
+		<div id="apple">This is Tuesday</div>
+		<ul>
+			<li>哈尔滨</li>
+			<li>长春</li>
+			<li>沈阳</li>
+		</ul>
+		<br/>
+		<input type="button" value="触发1" onclick="f()"/>
+		<input type="button" value="触发2" onclick="s()"/>
+		<input type="button" value="触发3" onclick="r()"/>
+	</body>
+</html>

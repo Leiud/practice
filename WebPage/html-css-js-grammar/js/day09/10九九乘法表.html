@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：九九乘法表
+/*
+	(1)输出1行1列的表格
+	(2)输出9行1列的表格
+	(3)输出9行9列的表格
+	(4)输出梯形表格
+	(5)填入数据
+*/
+//（5）填入数据
+var str = "";
+str += "<table width=600 border=1 rules=all align=center>";
+//变量i代表行号
+for(var i=1;i<=9;i++)
+{
+	str += "<tr>";
+	//变量j代表列号
+	for(var j=1;j<=i;j++)
+	{
+		str += "<td>"+j+"&times;"+i+"="+(j*i)+"</td>";
+	}
+	str += "</tr>";
+}
+str += "</table>";
+document.write(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

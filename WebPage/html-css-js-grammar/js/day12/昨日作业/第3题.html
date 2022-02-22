@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//（字符，偏难）利用var s1 = prompt(“请输入任意字符”,””)可以获取用户输入的字符(输入一个单词)（存到变量s1中了），试编程将用户输入的字符“反转顺序”并首尾字母转为大写，其他字母转为小写后alert出来。
+
+/*
+	(1)获取输入的单词。var str = window.prompt()  //  BEIJiNg
+	(2)将单词转成全小写。str.toLowerCase()  // beijing
+	(3)将字符串转成数组。var arr = str.split("");// arr = ["b","e","i","j","i","n","g"]
+	(4)将数组元素反转顺序。arr.reverse();     //arr = ["g","n","i","j","i","e","b"]
+	(5)首尾字符转大写。arr[0] = arr[0].toUpperCase()
+	                   arr[arr.length-1] = arr[arr.length-1].toUpperCase()
+					//arr = ["G","n","i","j","i","e","B"]
+	(6)将数组元素连接成一个字符串。str = arr.join("");   // GnijieB
+	(7)弹出结果。 window.alert(str);
+*/
+//获取用户输入的单词
+var str = window.prompt("请输入一个单词");
+//转成全小写
+str = str.toLowerCase();
+//将字符串转成数组
+var arr = str.split("");
+//数组反转顺序
+arr.reverse();
+//数组的第一个元素和最后一个元素大写
+arr[0] = arr[0].toUpperCase();
+arr[arr.length-1] = arr[arr.length-1].toUpperCase();
+//将数组连接成一个字符串
+str = arr.join("");
+//输出结果
+window.alert(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			(function(){
+				var jq=function(arg){
+					return new jq.fn.init(arg);
+				}
+				jq.fn={
+					init:function(arg){
+						if(arg.nodeType){
+							//dom对象选择器
+							this.length=1;
+							this[0]=arg;
+							return false;
+						}
+						
+						if(arg:indexOf('#')!=-1){
+							//id选择器
+							var flag=arg.substr(1,arg.length-1);//去除#号
+							var elem=document.getElementById(flag);
+							//dom对象与jQuery对象 做结合（dom对象是jQuery对象的数组部分）
+							this.length=1;
+							this[0]=elem;
+						}else{
+							//tag标签选择器
+							var elems=document.getElementByTagName(arg);
+							
+							this.length=elems.length;
+							for(var i=0;i<elems.length;i++){
+								this[i]=elems[i];
+							}
+						},
+					}
+					
+					css:function(k,v){
+						//this代表调用该方法的当前对象【jQuery对象】
+						for(var i=0;i<this.length;i++){
+							this[i].style[k]=v;
+						}
+					},
+					attr:function(k,v){
+						for(var i=0;i<this.length;i++){
+							this[i].setAttribute(k,v);
+						}
+					},
+					each:function(callback){
+						//callback函数会为每个dom对象执行一次
+						for(var i=0;i<this.length;i++){
+							//函数执行
+							//函数名称.call(函数内部this的指引，实参，实参.....)
+							callback.call(this[i],i,this[i]);
+						}
+					},
+				}
+				//设置使用init()构造函数实例化出来的对象也可以调用fn的成员
+				jq.fn.init.prototype=jq.fn;
+				
+				window.$=jq;
+			})()
+		</script>
+		<script type="text/javascript">
+			function f()
+			{
+				var clr=['red','blue','green','pink','orange','gold'];
+				
+				$('li').each(function(k,v){
+					$(this).css('color',clr[Math.floor(Math.random()*6)]);
+				});
+			}
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	
+	<body>
+		<h2>迷你jquery框架开发</h2>
+		<div id="apple">Today is Wednesday</div>
+		<ul>
+			<li>刘备</li>
+			<li>阿斗</li>
+			<li>关羽</li>
+		</ul>
+		<input type="button" value="触发" onclick="f()"/>
+	</body>
+</html>

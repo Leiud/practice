@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//（函数）定义一个函数，获得任意邮箱的用户名和域名。如：beijing@qq.com
+//全局变量：在函数外定义，可以在函数内使用的变量
+var email = window.prompt("请输入一个邮箱地址");
+function getEmailInfo()
+{
+	var index = email.indexOf("@");
+	//取出用户名和域名
+	var username = email.substr(0,index);
+	var hostname = email.substr(index+1);
+	//输出结果
+	document.write("用户名："+username+"<br>域名："+hostname);
+}
+getEmailInfo();
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

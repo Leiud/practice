@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body,ul,li{margin:0px;padding:0px;}
+ul,li{list-style:none;}
+body{font-size:12px;}
+#dome{
+	width:180px;
+	height:250px;
+	border:1px solid #000;
+	margin:50px auto;
+	padding:0px 10px;
+	overflow:hidden; /*溢出隐藏*/
+}
+#dome li{padding:4px 0px;}
+</style>
+<script type="text/javascript">
+/*****************************************书讯快递***********************************************/
+//（1）取得三个对象的id
+//（2）三个DIV的高度一致
+//（3）dome2中的内容与dome1的内容一样
+//（4）dome的scrollTop属性来实现滚动
+//（5）鼠标放上dome停止滚动、鼠标移开dome继续滚动
+var dome0;
+window.onload = function(){
+	//(1)获取三个<div>的id
+	dome0 = document.getElementById("dome");
+	var dome1 = document.getElementById("dome1");
+	var dome2 = document.getElementById("dome2");
+	//(2)三个<div>的高度一样
+	//这里的style属性，又是一个style对象，代表CSS对象。
+	//style对象的属性与CSS的属性一样。
+	//这里的style对象代表行内样式。
+	dome1.style.height = dome.offsetHeight + "px";
+	dome2.style.height = dome.offsetHeight + "px";
+	
+	/*dome1.style.backgroundColor = "#99cc66";
+	dome2.style.backgroundColor = "#ffff66";
+	*/
+
+	//(3)将dome1中的内容复制到dome2中
+	dome2.innerHTML = dome1.innerHTML;
+	//(4)dome的scrollTop属性来实现滚动
+	window.setInterval("start2(dome0)",40);
+}
+
+function start2(abc)
+{
+	if(abc.scrollTop==abc.offsetHeight)
+	{
+		abc.scrollTop = 0;
+	}else
+	{
+		abc.scrollTop++;
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="dome">
+	<div id="dome1">
+		<ul>
+			<li>·2010考研英语大纲到货75折...</li>
+			<li>·权威定本四大名著（人民文...</li>
+			<li>·口述历史权威唐德刚先生国...</li>
+			<li>·袁伟民与体坛风云：实话实...</li>
+			<li>·我们台湾这些年：轰动两岸...</li>
+			<li>·畅销教辅推荐：精品套书50...</li>
+			<li>·2010版法律硕士联考大纲75...</li>
+			<li>·计算机新书畅销书75折抢购</li>
+			<li>·2009年孩子最喜欢的书>></li>
+			<li>·弗洛伊德作品精选集59折</li>
+		</ul>
+	</div>
+	<div id="dome2"></div>
+</div>
+</body>
+</html>
