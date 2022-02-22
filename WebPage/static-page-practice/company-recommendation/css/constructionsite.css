@@ -1,0 +1,307 @@
+.Label .LabelText1{
+	width:395px;
+	height:93px;
+	z-index:100;
+	left:57px;
+	top:5px;
+	position:absolute;
+	margin-left:0px;
+}
+.Label .LabelText1 div p span{
+	font-family:'MicrosoftYaHei';
+	color:#E56600;
+	font-size:24px;
+	line-height:2;
+}
+
+.Label .LabelText2{
+	width:254px;
+	height:94px;
+	z-index:100;
+	left:1030px;
+	top:17px;
+	position:absolute;
+	margin-left:0px;
+}
+
+.Label .NavBar{
+	height:80px;
+	z-index:90;
+	top:124px;
+	position:absolute;
+	background-color:#800000;
+	
+}
+.Label .NavBar .NavMean{
+	width:1235px;
+	height:80px;
+	z-index:100;
+	left:40px;
+	top:1px;
+	position:absolute;
+	margin-left:0px;
+	background-color:#800000;
+}
+.Label .NavBar .NavMean .NavBarUi li{
+		width:120px;
+		height:50px;
+		line-height:50px;
+		margin-left:30px;
+		float:left;
+		display:inline-block;
+		text-align:center;
+		}
+.Label .NavBar .NavMean .NavBarUi li a{
+		font-size:16px;
+		text-decoration:none;
+		width:120px;height:50px;
+		color:#dedcde;
+		}
+.Label .NavBar .NavMean .NavBarUi li a:hover{
+		color:#ff8000;
+}
+
+.LabelNav{
+	width:1200px;
+	height:66px;
+	z-index:100;
+	left:60px;
+	top:232px;
+	position:absolute;
+}
+.LabelNav .Label1{
+	width:312px;
+	height:42px;
+	z-index:105;
+	left:0px;
+	top:9px;
+	position:absolute;
+	margin-left:0px;
+}
+.LabelNav .LabelHr{
+	width:1200px;
+	height:23px;
+	z-index:102;
+	left:0px;
+	top:43px;
+	position:absolute;
+	margin-left:0px;
+}
+.LabelNav .Label2{
+	width:603px;
+	height:33px;
+	z-index:100;
+	left:586px;
+	top:24px;
+	position:absolute;
+	margin-left:0px;
+}
+
+.main{
+	position:relative;
+	height:744px;
+	min-height:10px;
+	position:relative;
+}
+.main .NavBar{
+	width:224px;
+	height:682px;
+	z-index:100;
+	left:5px;
+	top:92px;
+	position:absolute;
+	background-color:#f2f2f2;
+}
+.main .NavBar .LabelText1{
+	width:224px;
+	height:73px;
+	z-index:100;
+	left:0px;
+	top:0px;
+	position:absolute;
+	background-color:#000000;
+	margin-left:0px;
+}
+.main .NavBar .LabelText2{
+	width:224px;
+	height:73px;
+	z-index:100;
+	top:70px;
+	position:absolute;
+	background-color:#f0f0f0;
+	text-align:center;
+}
+.main .NavBar .LabelText2 div{
+	width:224px;
+	height:43px;
+	border-bottom:1px solid #000000;
+	font-weight:normal;
+}
+.main .NavBar .LabelText2 div a{
+	line-height:43px;
+	text-decoration:none;
+}
+.main .NavBar .LabelText2 .pircture{
+	width:224px;
+	height:79px;
+	padding-top:20px;
+	border-bottom:0px solid #000000;
+}
+
+.LabelText3{
+	width:224px;
+	height:148px;
+	z-index:100;
+	left:6px;
+	top:593px;
+	position:absolute;
+	background-color:#ffffff;
+	margin-left:0px;
+}
+
+.Pircuter{
+	position:absolute;
+	height:754px;
+	width:100%;
+	top:30px;
+	min-height:10px;
+}
+.Pircuter .LabelList{
+	width:965px;
+	height:610px;
+	z-index:101;
+	left:235px;
+	top:82px;
+	position:absolute;
+	margin-left:0px;
+}
+.Pircuter .LabelList .productList226{
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+.Pircuter .LabelList .productList226 .prolist226 li{
+	list-style:none;
+	float:left;
+}
+
+.Bottom{
+	position:relative;
+	height:213px;
+	width:102.5%;
+	left:4px;
+	top:30px;
+	min-height:30px;
+	background-color:#686766;
+}
+.Bottom .NavBar{
+	height:213px;
+	z-index:auto;
+	top:0px;
+	position:absolute;
+}
+.Bottom .NavBar .LabelPhone{
+	width:169px;
+	height:31px;
+	z-index:100;
+	left:59px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelEmail{
+	width:209px;
+	height:33px;
+	z-index:101;
+	left:273px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelAddress{
+	width:229px;
+	height:31px;
+	z-index:102;
+	left:495px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelHr{
+	width:693px;
+	height:26px;
+	z-index:100;
+	left:28px;
+	top:68px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .NavMean{
+	width:724px;
+	height:48px;
+	z-index:100;
+	left:10px;
+	top:109px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .NavMean .NavBarUi{
+	width:1100px;
+	border-radius:0px;
+	font-family:Microsoft YaHei;
+	display:table-cell;
+	vertical-align:middle;
+	}
+.NavBarUi li{
+	width:120px;
+	border-radius:0px;
+	float:left;
+	display:inline-block;
+	text-align:center;
+}
+.NavBarUi li a{
+	font-size:14px;
+	text-decoration:none;
+	width:120px;
+	display:block;
+	color:#f2e0c4;
+}
+.NavBarUi li a:hover{
+	color:#000000;
+}
+.Bottom .NavBar .LabelPicture1{
+	width:122px;
+	height:125px;
+	z-index:100;
+	left:827px;
+	top:38px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPicture2{
+	width:122px;
+	height:125px;
+	z-index:101;
+	left:1022px;
+	top:38px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPictureText1{
+	width:82px;
+	height:40px;
+	z-index:100;
+	left:859.5px;
+	top:162px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPictureText2{
+	width:89px;
+	height:40px;
+	z-index:101;
+	left:1050.5px;
+	top:162px;
+	position:absolute;
+	margin-left:0px;
+}
+

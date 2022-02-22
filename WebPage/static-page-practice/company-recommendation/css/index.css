@@ -1,0 +1,360 @@
+.Label .LabelText1{
+	width:395px;
+	height:93px;
+	z-index:100;
+	left:57px;
+	top:5px;
+	position:absolute;
+	margin-left:0px;
+}
+.Label .LabelText1 div p span{
+	font-family:'MicrosoftYaHei';
+	color:#E56600;
+	font-size:24px;
+	line-height:2;
+}
+
+.Label .LabelText2{
+	width:254px;
+	height:94px;
+	z-index:100;
+	left:1030px;
+	top:17px;
+	position:absolute;
+	margin-left:0px;
+}
+
+.Label .NavBar{
+	height:80px;
+	z-index:90;
+	top:124px;
+	position:absolute;
+	background-color:#800000;
+	
+}
+.Label .NavBar .NavMean{
+	width:1235px;
+	height:80px;
+	z-index:100;
+	left:40px;
+	top:1px;
+	position:absolute;
+	margin-left:0px;
+	background-color:#800000;
+}
+.Label .NavBar .NavMean .NavBarUi li{
+		width:120px;
+		height:50px;
+		line-height:50px;
+		margin-left:30px;
+		float:left;
+		display:inline-block;
+		text-align:center;
+		}
+.Label .NavBar .NavMean .NavBarUi li a{
+		font-size:16px;
+		text-decoration:none;
+		width:120px;height:50px;
+		color:#dedcde;
+		}
+.Label .NavBar .NavMean .NavBarUi li a:hover{
+		color:#ff8000;
+}
+
+.ConstructionSite{
+	width:1200px;
+	height:416px;
+	z-index:95;
+	top:225px;
+	position:absolute;
+}
+.ConstructionSite .LabelAdvertisingLeft{
+	width:466px;
+	height:40px;
+	z-index:101;
+	left:122px;
+	top:17px;
+	position:absolute;
+	margin-left:0px;
+}
+.ConstructionSite .LabelAdvertisingCenter{
+	width:217px;
+	height:59px;
+	z-index:100;
+	left:562px;
+	top:0px;
+	position:absolute;
+	background-color:#f2f2f2;
+	margin-left:0px;
+}
+.ConstructionSite .LabelAdvertisingRight{
+	width:466px;
+	height:40px;  
+	z-index:100;
+	left:752px;
+	top:16px;
+	position:absolute;
+	margin-left:0px;
+}
+
+#demo {
+	background: #FFF;
+	overflow:hidden;
+	border: 1px dashed #CCC;
+	height:413px;
+	margin-top:320px;
+}
+#demo #indemo #demo1 img {
+	border: 3px solid #F2F2F2;
+}
+#indemo {
+	float: left;
+	width: 800%;
+}
+#demo1 {
+	float: left;
+}
+#demo2 {
+	float: left;
+}
+
+.CompanyProfilePre{
+	width:1200px;
+	height:416px;
+	z-index:95;
+	top:763px;
+	left:20px;
+	position:absolute;
+}
+.CompanyProfilePre .LabelAdvertisingLeft{
+	width:466px;
+	height:40px;
+	z-index:101;
+	left:122px;
+	top:17px;
+	position:absolute;
+	margin-left:0px;
+}
+.CompanyProfilePre .LabelAdvertisingCenter{
+	width:217px;
+	height:59px;
+	z-index:100;
+	left:562px;
+	top:0px;
+	position:absolute;
+	background-color:#f2f2f2;
+	margin-left:0px;
+}
+.CompanyProfilePre .LabelAdvertisingRight{
+	width:466px;
+	height:40px;  
+	z-index:100;
+	left:752px;
+	top:16px;
+	position:absolute;
+	margin-left:0px;
+}
+.CompanyProfile{
+	width:1200px;
+	height:363px;
+	z-index:100;
+	left:93px;
+	top:873px;
+	position:absolute; 
+	background-color:gray;
+}
+.CompanyProfile .LabelText1{
+	width:702px;
+	height:85px;
+	z-index:100;
+	left:474px;
+	top:17px;
+	position:absolute;
+	margin-left:0px;
+} 
+.CompanyProfile .LabelPicture{
+	width:415px;
+	height:289px;
+	z-index:100;
+	left:30px;
+	top:31px;
+	position:absolute;
+	margin-left:0px;
+}
+.CompanyProfile .LabelText2{
+	width:704px;
+	height:319px;
+	z-index:100;
+	left:475px;
+	top:86px;
+	position:absolute;
+	margin-left:0px;
+	padding-bottom:5px;
+} 
+
+
+
+.Honor{
+	height:402px;
+	top:1248px;
+	left:680px;
+	position:absolute;
+}
+.Honor .LabelText1{
+	width:1200px;
+	height:52px;
+	z-index:102;
+	left:50%;
+	top:22px;
+	position:absolute;
+	margin-left:-583.5px;
+	background-color:#f0f0f0;
+}
+.Honor .LabelText2{
+	width:1200px;
+	height:100px;
+	z-index:102;
+	left:50%;
+	top:74px;
+	position:absolute;
+	margin-left:-583.5px;
+	background-color:#f0f0f0;
+}
+
+.LabelPircuter{
+	width:1200px;
+	height:285px;
+	z-index:100;
+	left:100px;
+	top:1419px;
+	position:absolute;
+	background-color:#f0f0f0;
+}
+.LabelPircuter img{
+	width:260px;
+	height:210px;
+	background-repeat:no-repeat;
+	margin-top:10px;
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.Bottom{
+	position:relative;
+	height:213px;
+	width:100%;
+	min-height:30px;
+	top:1000px;
+	background-color:#686766;
+}
+.Bottom .NavBar{
+	height:213px;
+	z-index:auto;
+	top:0px;
+	position:absolute;
+}
+.Bottom .NavBar .LabelPhone{
+	width:169px;
+	height:31px;
+	z-index:100;
+	left:59px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelEmail{
+	width:209px;
+	height:33px;
+	z-index:101;
+	left:273px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelAddress{
+	width:229px;
+	height:31px;
+	z-index:102;
+	left:495px;
+	top:28px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelHr{
+	width:693px;
+	height:26px;
+	z-index:100;
+	left:28px;
+	top:68px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .NavMean{
+	width:724px;
+	height:48px;
+	z-index:100;
+	left:10px;
+	top:109px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .NavMean .NavBarUi{
+	width:1100px;
+	border-radius:0px;
+	font-family:Microsoft YaHei;
+	display:table-cell;
+	vertical-align:middle;
+	}
+.NavBarUi li{
+	width:120px;
+	border-radius:0px;
+	float:left;
+	display:inline-block;
+	text-align:center;
+}
+.NavBarUi li a{
+	font-size:14px;
+	text-decoration:none;
+	width:120px;
+	display:block;
+	color:#f2e0c4;
+}
+.NavBarUi li a:hover{
+	color:#000000;
+}
+.Bottom .NavBar .LabelPicture1{
+	width:122px;
+	height:125px;
+	z-index:100;
+	left:827px;
+	top:38px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPicture2{
+	width:122px;
+	height:125px;
+	z-index:101;
+	left:1022px;
+	top:38px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPictureText1{
+	width:82px;
+	height:40px;
+	z-index:100;
+	left:859.5px;
+	top:162px;
+	position:absolute;
+	margin-left:0px;
+}
+.Bottom .NavBar .LabelPictureText2{
+	width:89px;
+	height:40px;
+	z-index:101;
+	left:1050.5px;
+	top:162px;
+	position:absolute;
+	margin-left:0px;
+}

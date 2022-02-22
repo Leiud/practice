@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>首页</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="Label">
+        <div class="LabelText1" titles="文字左">
+		   <div>
+			 <p>
+			   <span>
+			     <strong style="font-size:32px;">洪滔锚杆锚索绿化护坡公司</strong>
+			   </span> 
+			 </p>
+		   </div>
+	    </div>
+        <div class="LabelText2" titles="文字右">
+		  <div>
+		    <p style="text-align:right;">
+			  <span style="color:#E56600;font-family:'Microsoft YaHei';font-size:18px;line-height:2;">
+			     <strong style="font-size:20px;">服务热线：13479489672</strong>
+			  </span> 
+		    </p>
+		    <p style="text-align:right;">
+			  <span style="color:#000000;font-family:'MicrosoftYaHei';font-size:18px;line-height:2;">
+				  <strong style="font-size:20px;">——承接各种绿化护坡工程</strong>
+		      </span> 
+		    </p>
+	      </div>
+	    </div>
+	    <div class="NavBar" titles="导航栏">
+		  <div class="NavMean" titles="导航菜单">
+			<ul class="NavBarUi">
+		      <li><a href="index.html">首页</a></li>
+		      <li><a href="companyprofile.html">公司简介 </a></li>
+			  <li><a href="companynews.html">公司动态</a></li>
+		      <li><a href="equipmentexhibition.html">设备展示</a></li>
+		      <li><a href="constructionsite.html">施工现场</a></li>
+		      <li><a href="projectcase.html">工程案例</a></li>
+		      <li><a href="message.html">信息留言</a></li>
+	       </ul>
+		  </div>
+	    </div>
+	  </div>
+
+	  <div class="ConstructionSite">
+			<div class="LabelAdvertisingLeft">
+				<div>
+					<div style="text-align:right;">
+						<span style="font-family:'Microsoft  YaHei';font-size:16px;color:#000000;">———————————————  
+						 </span>
+					</div>
+				</div>
+			 </div>
+
+			<div class="LabelAdvertisingCenter" titles="文字">
+                <div>
+			      <p style="text-align:center;">
+	                 <strong style="line-height:1.5;">
+					    <span style="font-size:24px;color:#FF9900;line-height:1;">施工现场</span>
+				     </strong> 
+				  </p>
+				  <p style="text-align:center;">
+					 <span style="font-size:14px;color:#000000;font-family:'Times New Roman';line-height:1;"><span style="font-size:14px;color:#000000;font-family:'Times New Roman';line-height:1;">Construction site</span></span> 
+				  </p>
+					<span style="font-size:24px;"> <div style="text-align:center;"><br />
+						</div></span>
+			    </div>
+			 </div>
+
+			<div class="LabelAdvertisingRight">
+				<div>
+					<span style="font-family:'Microsoft YaHei';font-size:16px;color:#000000;">———————————————</span>
+				</div>
+			 </div>
+		</div>
+
+		<div id="demo">
+			<div id="indemo">miao
+				<div id="demo1">
+					<img src="images/project/喷锚2.jpg" />
+					<img src="images/project/喷锚3.jpg" />
+					<img src="images/project/制作锚索.jpg" />
+					<img src="images/project/9.jpg" />
+				</div>
+				<div id="demo2"></div>
+			</div>
+		</div>
+
+	<script>
+		var speed=10; //数字越大速度越慢
+		var tab=document.getElementById("demo");
+		var tab1=document.getElementById("demo1");
+		var tab2=document.getElementById("demo2");
+		tab2.innerHTML=tab1.innerHTML;
+		function Marquee(){
+			if(tab2.offsetWidth-tab.scrollLeft<=0)
+				tab.scrollLeft-=tab1.offsetWidth
+			else{
+				tab.scrollLeft++;
+			}
+		}
+		var MyMar=setInterval(Marquee,speed);
+		tab.onmouseover=function() {clearInterval(MyMar)};
+		tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+	</script>
+
+
+	<div class="CompanyProfilePre">
+			<div class="LabelAdvertisingLeft">
+				<div>
+					<div style="text-align:right;">
+					     <span style="font-family:'Microsoft  YaHei';font-size:16px;color:#000000;">———————————————</span>
+					</div>
+				</div>
+			 </div>
+
+			<div class="LabelAdvertisingCenter" titles="文字">
+                <div>
+			      <p style="text-align:center;">
+	                 <strong style="line-height:1.5;">
+					    <span style="font-size:24px;color:#FF9900;line-height:1;">公司简介</span>
+				     </strong> 
+				  </p>
+				  <p style="text-align:center;">
+					 <span style="font-size:14px;color:#000000;font-family:'Times New Roman';line-height:1;"><span style="font-size:14px;color:#000000;font-family:'Times New Roman';line-height:1;">CompanyProfile</span></span> 
+				  </p>
+					<span style="font-size:24px;"> <div style="text-align:center;"><br />
+						</div></span>
+			    </div>
+			 </div>
+
+			<div class="LabelAdvertisingRight">
+				<div>
+					<span style="font-family:'Microsoft YaHei';font-size:16px;color:#000000;">———————————————</span>
+				</div>
+			 </div>
+		</div>
+	</div>
+
+		<div class="CompanyProfile">
+			<div class="LabelPicture" titles="图片">
+				<div>
+					<img width="400" height="281" src="images/equipment/厂房.png"/>
+				</div>
+			</div>
+
+			<div class="LabelText1" titles="文字">
+				<div class="label_content advContent text157">
+					<strong style="margin:0px;padding:0px;color:#E56600;font-family:'Microsoft YaHei';font-size:24px;line-height:48px;white-space:normal;">洪滔锚杆锚索绿化护坡公司&nbsp;
+					<hr />
+					</strong>
+				</div>
+			</div>
+
+			<div class="LabelText2" titles="文字">
+				<div>
+				  <p style="font-size:14px;line-height:1.5;color:#000000;text-indent:2em;">洪滔锚杆锚索绿化护坡工程队成立于年 2009年3 月18 日，位于江西省赣州市。公司专业承包经营边坡绿化、锚杆锚索、喷锚、框架梁等护坡工程，专业承接：房地产、高速、铁路等护坡及绿化工程。</p>
+				  <p style="font-size:14px;line-height:1.5;color:#000000;text-indent:2em;">目前公司旗下有员工百十号人，公司一贯坚持“质量第一，用户至上，优质服务，信守合同”的宗旨，凭借着高质量的产品、良好的信誉让各项工程建设完美“收官”。</p>
+				  <p style="font-size:14px;line-height:1.5;color:#000000;text-indent:2em;">在工程建设过程中，本公司对业主高度负责，强化工程质量监督、从严工程质量。同时，认真做好安全文明施工，制定周密环保措施，控制噪音及杜绝各种声光污染，制定安全保证体系，确保施工中不发生任何伤亡事故，创建安全文明工地。</p>
+				  <p style="font-size:14px;line-height:1.5;color:#000000;text-indent:2em;">洪滔锚杆锚索绿化护坡企业经过近十年的努力，逐步发展成为一个具有相当经营规模和较高知名度的公司。经营地域遍布江西、广东、广西、安徽、河南、河北等省，并在江西形成了坚实的发展基础。全体员工精诚合作，共同致力于国家的道路建设事业，共创美好未来。</p>
+				<div>
+			</div>
+		</div>
+	   </div>
+	</div>
+	
+	<div class="Honor">
+		<div class="LabelText1"titles="文字">
+			<div style="text-align:center;">
+				<span style="color:#FF9900;font-size:24px;font-family:'Microsoft YaHei';"> 
+					<span style="font-size:24px;">公司荣誉&nbsp;</span>
+					<span style="font-size:32px;">&nbsp;</span>
+				</span>
+				<span style="color:#999999;font-family:'Microsoft YaHei';font-size:18px;">/ Honor&nbsp;&nbsp;</span>
+			</div>
+		</div>
+
+		<div class="LabelText2">
+			<div>
+				<div style="text-align:center;">
+					<span style="line-height:1;"> 
+						<p>
+						  坚持“对客户负责，对社会负责”的经营方针
+						</p>
+					</span> 
+					<span style="line-height:1;"> 
+						<p>
+						  再接再厉，继续为广大的新老客户建精品工程而努力
+						</p>
+					</span> 
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="LabelPircuter" titles="奖项">
+			<div style="float:left;">	
+   				<img src="images/certificate/AAA.jpg" />
+				<p class="title" style="text-align:center;">AAA证书</p>		
+			</div>
+			<div style="float:left;">		
+				<img src="images/certificate/百强企业.jpg" />	
+				<p class="title" style="text-align:center;">百强企业</p>
+			</div>
+			<div style="float:left;">	
+				<img src="images/certificate/质量检验合格证书.jpg" />
+				<p class="title" style="text-align:center;">质量检验合格证书</p>	
+			</div>
+			<div style="float:left;">	
+				<img src="images/certificate/资质证书.jpg" />			
+				<p class="title" style="text-align:center;">资质证书</p>
+			</div>
+			<div style="clear:both;"></div>
+	</div>
+
+	<div class="Bottom">
+       <div class="NavBar">
+			<div class="LabelPhone" titles="文字">
+              <div>
+			   <span style="color:#FFFFFF;">联系电话：13479489672</span>
+			  </div>
+            </div>
+			
+			<div class="LabelEmail" titles="文字">
+              <div>
+			   <span style="color:#FFFFFF;">邮箱：1837539130@qq.com</span>
+			  </div>
+            </div>
+
+            <div class="LabelAddress"  titles="文字">
+             <div>
+               <span style="color:#FFFFFF;">地址：江西省赣州市洪滔锚杆锚索绿化绿化护坡工程队<br/>
+               </span>
+             </div>
+            </div>
+
+		    <div class="LabelHr" titles="分割线">
+              <div><hr /></div>
+            </div>
+
+            <div class="NavMean"  titles="导航菜单">
+			  <ul class="NavBarUi">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="companyprofile.html">公司简介</a></li>
+				<li><a href="companynews.html">公司动态</a></li>
+				<li><a href="equipmentexhibition.html">设备展示</a></li>
+				<li><a href="constructionsite.html">施工现场</a></li>
+				<li><a href="projectcase.html">工程案例</a></li>
+				<li><a href="message.html">联系我们</a></li>
+             </ul>
+             <div class="clear"></div>
+            </div>
+
+	        <div class="LabelPicture1" titles="图片">
+              <div>
+		        <img width="120" height="120" src="images/QRcode/QQ二维码.jpg"
+		      /></div>
+            </div>
+
+            <div class="LabelPicture2" titles="图片">
+              <div>
+			   <img width="120" height="120" src="images/QRcode/微信二维码.jpg" /></div>
+            </div>
+
+            <div class="LabelPictureText1" titles="文字">
+             <div>
+		       <span style="color:#FFFFFF;">QQ二维码</span>
+		     </div>
+            </div>
+
+            <div class="LabelPictureText2" titles="文字">
+		     <div>
+		       <span style="color:#FFFFFF;">微信二维码</span>
+		     </div>
+            </div>
+	   </div>
+      </div>
+	</body>
+</html>
