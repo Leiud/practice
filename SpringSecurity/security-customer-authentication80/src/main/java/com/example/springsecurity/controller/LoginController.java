@@ -21,4 +21,13 @@ public class LoginController {
     public String toMain(){
         return "redirect:/index.html";
     }
+
+    /**
+     * 失败后跳转页面
+     * @return
+     */
+    @RequestMapping("/toError")
+    public String toError(){
+        return "redirect:/error.html";
+    }
 }

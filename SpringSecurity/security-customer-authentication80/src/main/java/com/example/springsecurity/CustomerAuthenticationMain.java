@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CustomerLoginMain {
+public class CustomerAuthenticationMain {
 
     public static void main(String[] args) {
-        SpringApplication.run(CustomerLoginMain.class, args);
+        SpringApplication.run(CustomerAuthenticationMain.class, args);
     }
 }

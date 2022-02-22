@@ -19,7 +19,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 当发现 /login 时认为是登录，必须和表单的提交地址一样；提交表单后去执行 UserServiceImpl
                 .loginProcessingUrl("/login")
                 // 登录成功后跳转页面，使用 POST 请求
-                .successForwardUrl("/toIndex");
+                .successForwardUrl("/toIndex")
+                // 登录失败后跳转页面，POST 请求
+                .failureForwardUrl("/toError");
 
         http.authorizeRequests()
                 // login.html 不需要被认证，放行的路径要在禁止之前写
