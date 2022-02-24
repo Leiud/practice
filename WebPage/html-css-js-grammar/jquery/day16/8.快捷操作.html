@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function f()
+			{
+				//给div设置class属性
+				//attr对同一个属性进行多次修改，后者覆盖前者
+				$('div').attr('class','apple');
+				$('div').attr('class','pear');
+				$('div').attr('class','banana');
+				//addClass()  给class追加属性值
+				//以下追加的属性值会同时存在
+				$('div').addClass('apple');
+				$('div').addClass('pear');
+				$('div').addClass('banana');
+			}
+			function r()
+			{
+				$('div').removeClass('pear');//删除class属性值
+				$('div').removeAttr('class');//删除class属性
+			}
+			function s()
+			{
+				$('div').toggleClass('apple');
+			}
+		</script>
+		<style type="text/css">
+			.apple{width:300px;height:200px;background-color:pink}
+			.pear{color:blue}
+			.banana{font-size:30px}
+		</style>
+	</head>
+	
+	<body>
+		<h2>快捷操作</h2>
+		<div>Today we are study Jquery</div>
+		<br/>
+		<input type="button" value="设置" onclick="f()"/>
+		<input type="button" value="删除class属性值" onclick="r()"/>
+		<input type="button" value="开关效果" onclick="s()"/>
+	</body>
+</html>

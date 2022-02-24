@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：表格隔行变色
+var str = "";
+str += "<table width=500 border=1 rules=all align=center>";
+str += "	<tr bgColor='#cccccc'>";
+str += "		<th>编号</th><th>新闻标题</th><th>发布时间</th>";
+str += "	</tr>";
+//变量初始化，i代表行号
+var i = 1;
+//条件成功，则执行循环体；否则，退出循环
+while(i<=100)
+{
+	//偶数行加背景色，寄数行不加背景色
+	if(i%2==0)
+	{
+		str += "<tr bgColor='#eee'>";
+	}else
+	{
+		str += "<tr>";
+	}
+	str += "		<td>第<font color=red>"+i+"</font>行</td><td>&nbsp;</td><td>&nbsp;</td>";
+	str += "	</tr>";
+	//变量更新
+	i++;
+}
+str += "</table>";
+//输出结果
+document.write(str);
+</script>
+</head>
+
+<body>
+</body>
+</html>

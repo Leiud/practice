@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//作业5：5、（流程：分支与循环）输出从2000年（含）到3000年（含）间的所有闰年。
+/*
+	(1)输出2000到3000之间所有数
+	(2)挑出闰年
+		能被4整除，且不能被100整除，或能被400整除
+*/
+for(var year=2000;year<=3000;year++)
+{
+	if(year%4==0 && year%100!=0 || year%400==0)
+	{
+		document.write(year+" ");
+	}
+}
+</script>
+</head>
+
+<body>
+</body>
+</html>

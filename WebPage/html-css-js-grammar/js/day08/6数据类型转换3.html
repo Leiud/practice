@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//（3）其它类型转成数值型
+var a = true;        // 1
+var a = false;       // 0
+var a = "120px";     // NaN
+var a = "100"        // 100
+var a = "";          // 0
+var a = undefined;   // NaN
+var a = null;        // 0
+//使用Number()全局函数，进行强制转换
+//全局函数或系统函数，是JS内置的函数，名称或大小写必须一致。
+var result = Number(a);
+//输出变量的类型和值
+document.write("类型："+typeof(result)+"，值："+result);
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

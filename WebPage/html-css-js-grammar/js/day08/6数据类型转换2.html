@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//（2）其它类型转成字符型
+var a = true;        //"true"
+var a = false;       //"false"
+var a = 100;         //"100"
+var a = 0;           //"0"
+var a = NaN;         //"NaN"
+var a = undefined;   //"undefined"
+var a = null;        //"null"
+//验证一下我们自己口算的结果
+//可以使用String()全局函数，强制转成字符型
+var result = String(a);
+//输出变量的类型和结果
+document.write("类型："+typeof(result)+"，值："+result);
+</script>
+</head>
+
+<body>
+</body>
+</html>

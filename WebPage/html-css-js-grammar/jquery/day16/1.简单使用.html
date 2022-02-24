@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function f()
+			{
+				//对象.css(属性，参数)
+				$('h2').css('color','blue');
+				//alert($('#h2').html());
+			}
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	
+	<body>
+		<h2 id="h2">开始学习jquery</h2>
+		<input type="button" value="触发" onclick="f()"/>
+	</body>
+</html>

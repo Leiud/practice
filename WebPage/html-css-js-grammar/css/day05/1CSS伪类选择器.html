@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+.box{ width:600px; border:1px solid #333; padding:20px;/*同时给四个边加10px的内填充*/}
+.box a:link, .box a:visited{ color:#003399; text-decoration:none; }
+.box a:hover{ color:#FF0000; text-decoration:underline;}
+/*
+	a.a1    //给class=a1的<a>元素添加样式
+	a.a1:link  //给class=a1的<a>元素的正常状态，添加样式
+*/
+.box a.a1:link, .box a.a1:visited{ color:#00cc00;font-size:24px;background-color:#ffff33;}
+.box a.a1:hover{ color:#ff00ff;}
+</style>
+</head>
+<body>
+<div class="box">
+	<span class="a1">大家好</span><br>
+	<a href="#">网站首页</a> | 
+	<a href="#">公司简介</a> | 
+	<a href="#" class="a1">新闻动态</a> | 
+	<a href="#">产品中心</a> | 
+	<a href="#" class="a1">最新发布</a> | 
+	<a href="#">在线留言</a> | 
+	<a href="#">投诉建议</a>
+</div>
+
+</body>
+</html>

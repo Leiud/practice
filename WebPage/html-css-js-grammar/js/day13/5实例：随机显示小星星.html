@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：随机显示小星星
+/*
+	(1)网页背景色为黑色
+	(2)创建图片节点，追加到<body>父节点
+	(3)图片随机大小
+	(4)图片随机定位坐标(x,y)
+	(5)定时器
+	(6)网页加载完成，开始星星
+	(7)星星显示的范围，跟窗口的宽高一样。(0,window.innerWidth)
+	(8)点击星星，星星消失
+*/
+
+//网页加载完成
+window.onload = function(){
+	//更改网页背景色
+	document.body.bgColor = "#000";
+	//定时器：1秒钟，显示一个星星
+	window.setInterval("star()",1000);
+}
+//动画主函数
+function star()
+{
+	//创建图片节点
+	var imgObj = document.createElement("img");
+	//添加src属性
+	imgObj.setAttribute("src","images/xingxing.gif");
+	//添加width属性。getRandom()随机数函数
+	var width = getRandom(15,85);
+	imgObj.setAttribute("width",width);
+
+	//添加style属性(行内样式)。
+	var x = getRandom(0,window.innerWidth);
+	var y = getRandom(0,window.innerHeight);
+	imgObj.setAttribute("style","position:absolute;left:"+x+"px;top:"+y+"px;");
+	
+	//添加onclick事件属性
+	//this代表当前对象，this是一个对象。
+	//this是系统关键字。this只能在函数内使用。
+	imgObj.setAttribute("onclick","removeImg(this)");
+	//将图片节点，挂载到<body>父节点下
+	document.body.appendChild(imgObj);
+}
+//函数：求随机数函数
+function getRandom(min,max)
+{
+	//随机数
+	var random = Math.random()*(max-min)+min;
+	//向下取整
+	random = Math.floor(random);
+	//返回结果
+	return random;
+}
+//函数：删除节点
+function removeImg(obj)
+{
+	document.body.removeChild(obj);
+}
+</script>
+</head>
+
+<body>
+</body>
+</html>

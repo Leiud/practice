@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：数组求平均值
+var arr = [1,2,3,4,5,56,54,3,32,23,90,6,7,8,9,10,11,76,98,56,12];
+var len = arr.length; //获取数组的长度
+var sum = 0;
+//循环数组
+for(var i=0;i<len;i++)
+{
+	sum += arr[i];//展开后 sum = sum + arr[i]
+	              /*
+					第1次循环  sum = sum + arr[0] = 0 + 1 = 1
+					第2次循环  sum = sum + arr[1] = 1 + 2 = 3
+					第3次循环  sum = sum + arr[2] = 3 + 3 = 6
+					……
+				  */
+}
+//输出结果
+document.write("平均值为：" + sum/len);
+</script>
+</head>
+
+<body>
+</body>
+</html>

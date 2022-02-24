@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//网页加载完成，去调用JS函数
+window.onload = init; //函数传地址，不能带括号
+//定义函数
+function init()
+{
+	//定时器：每隔1秒，调start2()函数一次
+	//定时器总是调用其它函数，而延时器总是调用自己所在的函数。
+	window.setInterval("start2()",1000);
+}
+//全局变量
+var i = 1;
+function start2()
+{
+	//获取网页中id=img01的图片元素对象
+	var imgObj = document.getElementById("img01");
+	//图片对象有src属性，那么 imgObj对象也有src属性
+	imgObj.src = "images/dd_scroll_"+i+".jpg";
+	i++;
+	//如果超过6，则i=1。
+	if(i>6)
+	{
+		i = 1;
+	}
+}
+</script>
+</head>
+<body>
+<img id="img01" src="images/dd_scroll_1.jpg" />
+</body>
+</html>

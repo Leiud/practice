@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function showTableNode()
+{
+	//html节点
+	var node_html = document.firstChild;
+	//body节点
+	var node_body = node_html.lastChild;
+	//table节点
+	var node_table = node_body.firstChild;
+	alert(node_table);
+}
+function editTextNodeValue()
+{
+	//body节点
+	var node_body = document.body;
+	//table节点
+	var node_table = node_body.firstChild;
+	//tbody节点
+	var node_tbody = node_table.firstChild;
+	//第二个tr节点
+	var node_tr = node_tbody.childNodes[1];
+	//第一个td节点
+	var node_td = node_tr.firstChild;
+	//文本节点
+	var node_text = node_td.firstChild;
+	//修改“李四”为“传智播客”
+	node_text.nodeValue = "传智播客";
+}
+</script>
+</head>
+<body><table width="600" border="1"><tr><td>张三</td><td>男</td></tr><tr><td>李四</td><td>男</td></tr></table>
+<input type="button" value="显示table节点" onClick="showTableNode()" />
+<input type="button" value="更改李四为传智播客" onClick="editTextNodeValue()" />
+</body>
+</html>

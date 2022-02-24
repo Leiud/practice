@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="1" />
+<title>无标题文档</title>
+</head>
+
+<body>
+</body>
+</html>
+<script type="text/javascript">
+//实例：网页随机背景色
+var min = 100000;
+var max = 999999;
+var random = Math.random()*(max-min)+min;
+//向下取整
+random = Math.floor(random);
+
+//直接查找body对象
+/*
+	document代表网页对象
+	body对象是document对象的子对象
+	body对象有一个bgColor的属性
+	访问网页中所有的标记的起点是document。
+	除了body以外，其它的标记的访问，必须使用id来访问。
+*/
+document.body.bgColor = "#"+random ;
+</script>

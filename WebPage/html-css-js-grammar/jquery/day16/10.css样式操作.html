@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>新建网页</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function f()
+			{
+				//获取
+				//行内  内部  外部都可以获取
+				//javascript的dom只能获取行内样式
+				console.log($('div').css('color'));
+				console.log($('div').css('width'));
+				console.log($('div').css('height'));
+				console.log($('div').css('background-color'));
+				console.log($('div').css('font-size'));
+				console.log($('div').css('border'));
+				//复合样式若获取不了则需要拆除
+				//border-bottom  border-left  ......
+			}
+			function s()
+			{
+				//设置(会被设为行内样式)
+				//有则修改 无责添加
+				$('div').css('font-size','40px');//添加
+				$('div').css('color','green');//修改
+				//复合样式可以直接进行设置
+				$('div').css('border','5px solid yellow');//修改
+				//通过json对象批量修改
+				$('div').css({'font-size':'50px',color:'purple',height:'100px'});
+			}
+		</script>
+		<link href="1.css" type="text/css" rel="stylesheet"/>
+		<style type="text/css">
+			div{width:300px;height:200px;background-color:lightblue}
+		</style>
+	</head>
+	
+	<body>
+		<h2>css样式操作</h2>
+		<!--样式：行内  内部  外部-->
+		<div style="color:red">Today we are study Jquery</div>
+		<br/>
+		<input type="button" value="获取" onclick="f()"/>
+		<input type="button" value="设置" onclick="s()"/>
+	</body>
+</html>

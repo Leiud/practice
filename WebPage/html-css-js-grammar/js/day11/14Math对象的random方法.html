@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="1" />
+<title>无标题文档</title>
+<script type="text/javascript">
+//实例：求两个整数之间的随机整数
+//定义随机数的函数
+function getRandom(max,min)
+{
+	//求随机整数
+	var random = Math.random()*(max-min)+min;
+	//向下取整
+	random = Math.floor(random);
+	//输出结果
+	document.write(random+"<hr>");
+}
+//调用函数
+getRandom(0,10);
+getRandom(10,20);
+getRandom(20,30);
+getRandom(7,91);
+</script>
+</head>
+
+<body>
+</body>
+</html>

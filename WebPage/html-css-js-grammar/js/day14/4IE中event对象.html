@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+window.onload = function()
+{
+	//获取id=img01的对象
+	var imgObj = document.getElementById("img01");
+	//增加onclick属性
+	imgObj.onclick = get_xy; //传地址，不带括号
+}
+//在IE中，event对象的使用
+//在IE中，event对象是window对象的一个属性，可以直接在函数中使用，而不需要传参数
+function get_xy()
+{
+	var str = "窗口左边距离："+event.clientX+"，窗口上边距离："+event.clientY;
+	str += "\n网页左边距离："+event.x+"，网页上边距离："+event.y;
+	str += "\n屏幕左边距离："+event.screenX+"，屏幕上边距离："+event.screenY;
+	str += "\n事件类型："+event.type;
+	window.alert(str);
+}
+</script>
+</head>
+<body>
+<img id="img01" width="400" src="images/01.jpg" />
+</body>
+</html>
