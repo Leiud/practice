@@ -1,0 +1,45 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: seata-order-service
+  cloud:
+    alibaba:
+      seata:
+        # 自定义事务组名称需要与 seata-server 中的对应，事务组名默认为 my_test_tx_group
+        tx-service-group: fsp_tx_group
+        # service 要与 tx-service-group 对齐，vgroupMapping 和 grouplist 在 service 的下一级，my_test_tx_group 在再下一级
+        service:
+          vgroupMapping:
+            # 要和 tx-service-group 的值一致
+            fsp_tx_group: default
+          grouplist:
+            # seata seaver 的 地址配置，此处可以集群配置是个数组
+            default: 127.0.0.1:8091
+    nacos:
+      discovery:
+        # nacos
+        server-addr: 192.168.0.104:8848
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://192.168.0.104:3306/seata_order?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    # mysql 驱动类
+    # driver-class-name: com.mysql.jdbc.Driver
+    # url: jdbc:mysql://192.168.0.104:3306/seata_storage?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+feign:
+  hystrix:
+    enabled: false
+
+logging:
+  level:
+    io:
+      seata: info
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
