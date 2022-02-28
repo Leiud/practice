@@ -7,9 +7,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+// @Service
 public class UserServiceImpl implements UserDetailsService {
 
     @Autowired
@@ -26,6 +27,7 @@ public class UserServiceImpl implements UserDetailsService {
         String password = passwordEncoder.encode("1234");
         // 返回登录用户信息
         // return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal"));
-        return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal,ROLE_abc"));
+        // return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal,ROLE_abc"));
+        return new User(username,password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,ROLE_abc,/insert,/delete"));
     }
 }

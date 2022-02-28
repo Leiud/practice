@@ -1,5 +1,6 @@
 package com.example.springsecurity.handler;
 
+import com.example.springsecurity.domain.LoginUser;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -21,7 +22,7 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
         // Principal 主体，存放了登录用户的信息
         // User user = (User) authentication.getPrincipal();
-        User user = (User) authentication.getPrincipal();
+        LoginUser user = (LoginUser) authentication.getPrincipal();
         // 用户名
         System.out.println(user.getUsername());
         // 密码，输出 null

@@ -36,4 +36,22 @@ public class LoginController {
     public String toError(){
         return "redirect:/error.html";
     }
+
+    /**
+     * 转发到thymeleaf页面
+     * @return
+     */
+    @RequestMapping("/thymeleaf")
+    public String thymeleaf(){
+        return "thymeleaf";
+    }
+
+    /**
+     * 跳转到templates中login.html页面
+     * @return
+     */
+    @RequestMapping("/showLogin")
+    public String showLogin(){
+        return "login";
+    }
 }
