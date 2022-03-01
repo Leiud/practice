@@ -11,6 +11,11 @@
     <module>security-quickstart80</module>
       <module>security-customer-authentication80</module>
       <module>jwt-quickstart80</module>
+      <module>security-authorization-control80</module>
+      <module>security-customer-authorization80</module>
+      <module>security-integration-oauth280</module>
+    <module>security-integration-jwt80</module>
+      <module>security-integration-sso80</module>
   </modules>
   <packaging>pom</packaging>
 
