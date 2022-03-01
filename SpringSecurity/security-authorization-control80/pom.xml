@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>security-authority-control80</artifactId>
+    <artifactId>security-authorization-control80</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
