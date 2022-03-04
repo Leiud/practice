@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/vue.js"></script>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 使用 v-colak 能够解决插值表达式闪烁的问题 -->
+        <!-- 插值表达式闪烁：当vue.js还未被加载出来时，用户能看到页面上显示的插值表达式 -->
+        <p v-cloak>++++++{{ msg }}------</p>
+        <h4 v-text="msg">============</h4>
+        <!-- v-text默认没有闪烁问题 -->
+        <!-- v-text会覆盖元素中原本的内容，但插值表达式只会替换自己的这个占位符，不会把整个元素的内容清空 -->
+
+
+
+        <div v-cloak>{{ htmlmsg }}</div>
+        <div v-text="htmlmsg"></div>
+        <div v-html="htmlmsg"></div>
+
+
+
+        <!-- v-bind 是Vue中提供的用于绑定属性的指令 -->
+        <!-- v-bind 指令可以简写为 ：  -->
+        <!-- v-bind 中可以写合法的JS表达式 -->
+        <input type="button" value="按钮" v-bind:title="mytitle" />
+        <input type="button" value="按钮" v-bind:title="mytitle+'123'" />
+        <input type="button" value="按钮" :title="mytitle+'123'" />
+
+
+        <div>
+            <!-- Vue中提供了 v-on ：事件绑定机制 -->
+            <!-- v-on: 可简写为 @  -->
+            <input type="button" value="按钮" v-on:click="show" />
+            <input type="button" value="按钮" @click="show" />
+            <input type="button" value="按钮" v-on:mouseover="show" />
+        </div>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: '123',
+                htmlmsg: '<h1>这是h1</h1>',
+                mytitle: 'mytitle'
+            },
+            methods: {
+                //这个methods属性定义了当前Vue实例所有可用的方法
+                show: function () {
+                    alert("hello");
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
